@@ -156,7 +156,7 @@
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="1-Git简介"><a href="#1-Git简介" class="headerlink" title="#1 Git简介"></a>#1 Git简介</h1><p>学习一门技术老师更加倾向于看官网的。</p>
+                <h1 id="1-Git简介"><a href="#1-Git简介" class="headerlink" title="1 Git简介"></a>1 Git简介</h1><p>学习一门技术老师更加倾向于看官网的。</p>
 <p>度娘看完了，官网看完了，大家还是很懵逼</p>
 <p>学生成绩管理系统</p>
 <p>登录模块  3.2</p>
@@ -178,7 +178,8 @@
 <p><strong><em>\</em>大纲并没有去罗列出来**</strong></p>
 <p>之前老师的Maven视频有18小节</p>
 <p>两者切换起来大家看的时候比较不专注</p>
-<h1 id="2-Git官网"><a href="#2-Git官网" class="headerlink" title="#2 Git官网"></a>#2 Git官网</h1><p>对于官网（尤其是这种英文官网，比较害怕），看了比较痛苦，主要是看不懂</p>
+<p>#2 Git官网</p>
+<p>对于官网（尤其是这种英文官网，比较害怕），看了比较痛苦，主要是看不懂</p>
 <p>心里也知道看官网是最权威的，任何的其他途径的中文文档都是翻译过来，翻译就有一个麻烦的地方，有时候不准确，译者他翻译的结果达不到你自己内容的一个期望。</p>
 <p>还是要尝试去看官网。</p>
 <p>可以先有一个整体的认识，采用总-分-总的原则</p>
@@ -186,14 +187,15 @@
 <p><img src="file:///C:%5CUsers%5Chasee%5CAppData%5CLocal%5CTemp%5Cksohtml78688%5Cwps2.jpg" alt="img">官网最权威的一个文档提供给大家学习</p>
 <p><img src="file:///C:%5CUsers%5Chasee%5CAppData%5CLocal%5CTemp%5Cksohtml78688%5Cwps3.jpg" alt="img"> </p>
 <p>其实对于英文文档也不是那么难看懂嘛，实在遇不到不会的单词你查。</p>
-<h1 id="3-下载与安装"><a href="#3-下载与安装" class="headerlink" title="#3 下载与安装"></a>#3 下载与安装</h1><p>先从Windows入手，考虑到大家手上有的操作系统。</p>
+<p>#3 下载与安装</p>
+<p>先从Windows入手，考虑到大家手上有的操作系统。</p>
 <p>选择自己对应的操作系统，然后进行傻瓜式安装即可。</p>
 <p>Windows</p>
 <p><img src="file:///C:%5CUsers%5Chasee%5CAppData%5CLocal%5CTemp%5Cksohtml78688%5Cwps4.jpg" alt="img"> </p>
 <p>Linux中的安装</p>
 <p>yum  install  git  啪啦啪啦进行安装嘛</p>
 <p>接下来的课程中我们会进行windows和linux中的命令使用。</p>
-<h1 id="Git初体验"><a href="#Git初体验" class="headerlink" title="# Git初体验"></a># Git初体验</h1><p>通过前面三个小节的学习，我们已经基本上知道了git是干什么的，以及git的下载和安装等。</p>
+<h1 id="Git初体验"><a href="#Git初体验" class="headerlink" title="Git初体验"></a>Git初体验</h1><p>通过前面三个小节的学习，我们已经基本上知道了git是干什么的，以及git的下载和安装等。</p>
 <p>我们还想知道，git到底怎么去进行版本控制。</p>
 <p>需求是：比如有一份文本文件，想要操作这个文本文件。我去不断的修改这个文件的内容，每次修改之后，我需要记录修改的历史记录。</p>
 <p><img src="file:///C:%5CUsers%5Chasee%5CAppData%5CLocal%5CTemp%5Cksohtml78688%5Cwps5.jpg" alt="img"> </p>
@@ -205,20 +207,29 @@
 <p>我利用这种思想，可以一个文件走天的。</p>
 <p>时光穿梭，回退以前可以</p>
 <p>那假如我想到“当下”，这时候怎么办呢？</p>
-<h1 id="5-Git学前知识"><a href="#5-Git学前知识" class="headerlink" title="#5 Git学前知识"></a>#5 Git学前知识</h1><p>不妨先来画图，画图是老师的一个绝招，老师要用绝招给大家展示一些东西。</p>
+<p>#5 Git学前知识</p>
+<p>不妨先来画图，画图是老师的一个绝招，老师要用绝招给大家展示一些东西。</p>
 <p><img src="file:///C:%5CUsers%5Chasee%5CAppData%5CLocal%5CTemp%5Cksohtml78688%5Cwps7.jpg" alt="img"> </p>
 <p>工作区就是你当前使用的一个目录，比如“gupaogit”文件夹</p>
 <p>版本库就是add以及commit之后的乱七八糟的东西</p>
 <p>使用git，步骤：</p>
-<p>\1. 下载与安装</p>
-<p>\2. git config –global user.email/name  </p>
-<p>\3. git init  对一个文件夹目录进行git初始化操作，这个初始化就是为了让git对这个文件夹中的文件进行版本管理。</p>
+<ol>
+<li><p>下载与安装</p>
+</li>
+<li><p>git config –global user.email/name  </p>
+</li>
+<li><p>git init  对一个文件夹目录进行git初始化操作，这个初始化就是为了让git对这个文件夹中的文件进行版本管理。</p>
+</li>
+</ol>
 <p>初始化完成之后，在当前目录下会有一个.git文件夹，这个文件夹就是我们所说的版本库。</p>
 <p>现在就可以用git对其下的文件进行一个版本的控制，就是可以对它进行一个版本的回退，回到当前等等。</p>
-<p>\4. 接下来你的操作就是</p>
+<ol start="4">
+<li>接下来你的操作就是</li>
+</ol>
 <p>无非在这个工作区或者仓库中创建文件，然后对文件进行一系列修改操作之类的。</p>
 <p>Git的要求是，你要让git帮你进行的版本的管理，必须先有一个文件夹，这个文件夹要被git进行初始化操作，这样才能进行一个git的版本管理。</p>
-<h1 id="6-Git基础操作"><a href="#6-Git基础操作" class="headerlink" title="#6 Git基础操作"></a>#6 Git基础操作</h1><p>git status  git add   git commit</p>
+<p>#6 Git基础操作</p>
+<p>git status  git add   git commit</p>
 <p>需求：在git工作区中新建一个文件，名称为“gupao.txt”。</p>
 <p>git status:表示查看git工作区（仓库）中的一个状态</p>
 <p>(1)nothing to commit<img src="file:///C:%5CUsers%5Chasee%5CAppData%5CLocal%5CTemp%5Cksohtml78688%5Cwps8.jpg" alt="img"></p>
@@ -236,7 +247,8 @@
 <p>git commit:将暂存区的内容commit到提交区</p>
 <p>要想让git对你的文件内容进行版本管理，必须经过两个步骤，第一个是git add，第二个是git commit。</p>
 <p>可以随时随地使用git status进行工作区中状态的查看。</p>
-<h1 id="7-Git-log和版本切换"><a href="#7-Git-log和版本切换" class="headerlink" title="#7 Git log和版本切换"></a>#7 Git log和版本切换</h1><p>大家都知道git可以进行版本控制与管理。</p>
+<p>#7 Git log和版本切换</p>
+<p>大家都知道git可以进行版本控制与管理。</p>
 <p>如果你想要进行版本的切换的话，你需要知道的就是这个commitid，也就是说你要知道每一次提交的信息才可以。</p>
 <p>就要去查看这个每次的commitid是什么</p>
 <p>Git log  日志，也就是说查看git的日志信息</p>
@@ -255,7 +267,8 @@
 <p>麻烦是，回退到之前的版本之后，最新的commitid没了，如果你的之前的操作窗口有，你复制过来进行</p>
 <p>重点是要找到最新的一个版本的commitid即可。  git reflog</p>
 <p>如果进行版本回退之后，发现commitid最新的没了，你可以使用git reflog进行所有的commitid的查询。</p>
-<h1 id="8-工作区暂存区和提交区"><a href="#8-工作区暂存区和提交区" class="headerlink" title="#8 工作区暂存区和提交区"></a>#8 工作区暂存区和提交区</h1><p>在工作区进行了修改，然后git status会有一个提示，告诉你下一步需要干嘛</p>
+<p>#8 工作区暂存区和提交区</p>
+<p>在工作区进行了修改，然后git status会有一个提示，告诉你下一步需要干嘛</p>
 <p><img src="file:///C:%5CUsers%5Chasee%5CAppData%5CLocal%5CTemp%5Cksohtml78688%5Cwps14.jpg" alt="img"> </p>
 <p>正常的思维，你会进行git add</p>
 <p>后悔当前的操作，git checkout – gupao.txt  会撤销工作区中的一个修改，也就是说你不需要进行git add操作了。</p>
@@ -264,7 +277,8 @@
 <p><strong><em>\</em>git reset HEAD gupao.txt    回到提交区中的最新版本**</strong>   </p>
 <p><img src="file:///C:%5CUsers%5Chasee%5CAppData%5CLocal%5CTemp%5Cksohtml78688%5Cwps16.jpg" alt="img"> </p>
 <p>接下来需要做的就是再次使用git checkout – gupao.txt，将修改拉回到工作区，把工作区的修改内容清空</p>
-<h1 id="9-初识分支"><a href="#9-初识分支" class="headerlink" title="#9 初识分支"></a>#9 初识分支</h1><p><img src="file:///C:%5CUsers%5Chasee%5CAppData%5CLocal%5CTemp%5Cksohtml78688%5Cwps17.jpg" alt="img"> </p>
+<p>#9 初识分支</p>
+<p><img src="file:///C:%5CUsers%5Chasee%5CAppData%5CLocal%5CTemp%5Cksohtml78688%5Cwps17.jpg" alt="img"> </p>
 <p>把每一次的提交，都用线连起来，你会发现，很连贯。</p>
 <p>C/C++   指针的概念</p>
 <p>git reset –hard commitid</p>
@@ -276,7 +290,8 @@
 <p>Master分支指向的是最新的提交commitid，头指向指向的是我们的master分支。</p>
 <p>但是git的强大之处远不止如此，而是有一个多人协作开发的概念。</p>
 <p>不仅是一个单人开发进行版本控制，同时可以多人协作开发进行一个版本控制。  就是通过git的分支进行的。</p>
-<h1 id="10-详解分支"><a href="#10-详解分支" class="headerlink" title="#10 详解分支"></a>#10 详解分支</h1><p>在主分支master上切出一个开发分支，比如叫”dev_wang” </p>
+<p>#10 详解分支</p>
+<p>在主分支master上切出一个开发分支，比如叫”dev_wang” </p>
 <p>git checkout -b dev_wang;   创建一个分支</p>
 <p><img src="file:///C:%5CUsers%5Chasee%5CAppData%5CLocal%5CTemp%5Cksohtml78688%5Cwps19.jpg" alt="img"> </p>
 <p>现在你所有的操作都是在一个新的分支上进行。</p>
@@ -292,7 +307,8 @@
 <p>现在所处的分支是dev_wang，想要删除它的话，你必须在其他分支上。</p>
 <p>这时候你只能强制性的删除该分支</p>
 <p>git branch -D dev_wang</p>
-<h1 id="11-分支合并和冲突解决"><a href="#11-分支合并和冲突解决" class="headerlink" title="#11 分支合并和冲突解决"></a>#11 分支合并和冲突解决</h1><p>主分支master我们不会去动，只会用于版本的发布。</p>
+<p>#11 分支合并和冲突解决</p>
+<p>主分支master我们不会去动，只会用于版本的发布。</p>
 <p>各自在自己的分支上开发完成之后，需要将开发的内容合并到主分支上去。这个时候成为merge。</p>
 <p>需求:一个新的开发人员dev_zhang</p>
 <p>（1）git checkout -b dev_zhang;</p>
@@ -318,7 +334,8 @@
 <p><img src="file:///C:%5CUsers%5Chasee%5CAppData%5CLocal%5CTemp%5Cksohtml78688%5Cwps26.jpg" alt="img"> </p>
 <p>需要手动解决冲突，并且再去进行add,commit的操作。</p>
 <p>git checkout -b test</p>
-<h1 id="12-Git-config和配置别名"><a href="#12-Git-config和配置别名" class="headerlink" title="#12 Git config和配置别名"></a>#12 Git config和配置别名</h1><p>在你刚装完git的时候，老师让你去配置了一个email  name，只有这样你才能使用git</p>
+<p>#12 Git config和配置别名</p>
+<p>在你刚装完git的时候，老师让你去配置了一个email  name，只有这样你才能使用git</p>
 <p>git config配置git的命令</p>
 <p>git config -l  查看所有的配置信息</p>
 <p><img src="file:///C:%5CUsers%5Chasee%5CAppData%5CLocal%5CTemp%5Cksohtml78688%5Cwps27.jpg" alt="img"> </p>
@@ -339,7 +356,8 @@
 <p>Git log one  查看一行信息？</p>
 <p>配置别名？</p>
 <p>git config –global alias.st status   表示用st代表status。</p>
-<h1 id="13-打标签和忽略文件"><a href="#13-打标签和忽略文件" class="headerlink" title="#13 打标签和忽略文件"></a>#13 打标签和忽略文件</h1><p>打标签：</p>
+<p>#13 打标签和忽略文件</p>
+<p>打标签：</p>
 <p>Commitid不容易记住，能不能用一种比较独特的方式去记住每个版本</p>
 <p>118.222.113.253   这样访问网站方便？</p>
 <p><a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a>  域名访问网站方便？</p>
@@ -351,8 +369,7 @@
 <p>这个标签你看起来还是不够过瘾，你也可以给这个标签加上一个说明</p>
 <p>Git tag v2.0 -m “这里打上了一个标签”</p>
 <p>就得能够删除标签  git tag -d v1</p>
-<p><strong><em>\</em>忽略文件**</strong></p>
-<p>创建了一个Person.class的类文件，发现git标注为Untracked file  未被追踪的文件</p>
+<h2 id="忽略文件"><a href="#忽略文件" class="headerlink" title="忽略文件"></a>忽略文件</h2><p>创建了一个Person.class的类文件，发现git标注为Untracked file  未被追踪的文件</p>
 <p>Git add Person.class  肯定是可以的</p>
 <p>我希望这个文件不能被git管理起来</p>
 <p>能不能让git将这个文件（这类文件）给忽略呢？</p>
@@ -361,7 +378,8 @@
 <p>这个规则你要让git能够看懂</p>
 <p><img src="file:///C:%5CUsers%5Chasee%5CAppData%5CLocal%5CTemp%5Cksohtml78688%5Cwps28.jpg" alt="img"> </p>
 <p>告诉git让他不要帮你去管理这个文件了</p>
-<h1 id="14-本地仓库和远程仓库"><a href="#14-本地仓库和远程仓库" class="headerlink" title="#14 本地仓库和远程仓库"></a>#14 本地仓库和远程仓库</h1><p>假设主分支master已经存在，这时候多了一个开发人员，你怎样给他一个分支？</p>
+<p>#14 本地仓库和远程仓库</p>
+<p>假设主分支master已经存在，这时候多了一个开发人员，你怎样给他一个分支？</p>
 <p>每个人要至少在自己的电脑上进行开发？</p>
 <p>而这个master分支仅仅用于版本的发布的。</p>
 <p>用一台公共的电脑作为一个远程仓库，供每个开发者使用，每个开发者可以去创建各自独立的分支进行开发，开发完成之后，把各自的代码推到远程仓库上。</p>
@@ -371,7 +389,8 @@
 <p>码云  国内的远程仓库  </p>
 <p>问题是，你把代码放到他们上面，除非你交一些会员费，代码才不能让别人看见，不然你提交到你账号上的代码都公开的。</p>
 <p>搭建自己的私有仓库的话，让别人不可见，怎么做呢？Gitlab</p>
-<h1 id="15-GitHub和码云"><a href="#15-GitHub和码云" class="headerlink" title="#15 GitHub和码云"></a>#15 GitHub和码云</h1><p>Github  远程仓库</p>
+<p>#15 GitHub和码云</p>
+<p>Github  远程仓库</p>
 <p>Gupaogit   本地仓库</p>
 <p>把本地仓库gupaogit  上传到github上去进行。</p>
 <p>（1）在远程仓库github创建一个对应的项目比如gupaogit   repository仓库  </p>
